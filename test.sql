@@ -52,15 +52,10 @@ WHERE
   AND  ( "ITEM_SUPPLIER_MAP"."ACTIVE_FLAG"='Y'  )
   AND  
   "D_TIME_MONTH"."FIS_YR_MON"  IN  ( '2021 - 06'  )
-
+  AND
+  "D_BU"."BU_CODE"  IN  ( 'WTCHK'  )
 )
-
-SELECT * FROM CTE 
-WHERE RowNumber = 1
-
-
-  
-
+SELECT * FROM CTE
 
 
   
